@@ -1,8 +1,8 @@
 # Help Desk
 
-.NET
-Onion Architecture
-Entity Framework
-CQRS
-MediatR
-RabbitMQ
+####  .NET6
+####  Onion Architecture
+####  Entity Framework
+####  CQRS
+####  MediatR
+####  RabbitMQ
