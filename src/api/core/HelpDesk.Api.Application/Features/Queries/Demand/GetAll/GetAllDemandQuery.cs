@@ -1,16 +1,22 @@
-﻿using MediatR;
+﻿using HelpDesk.Common.Pagination.Filter;
+using HelpDesk.Common.Pagination.Wrappers;
+using MediatR;
 using System;
-using System.Collections.Generic;
 
 namespace HelpDesk.Api.Application.Features.Queries.Demand.GetAll
 {
-    public class GetAllDemandQuery : IRequest<List<GetAllDemandQueryResponse>>
+    public class GetAllDemandQuery : PaginationFilter, IRequest<PagedResponse<GetAllDemandQueryResponse>>
     {
         public Guid UserId { get; set; }
-
-        public GetAllDemandQuery(Guid userId)
+        public string Path { get; set; }
+        
+        public GetAllDemandQuery(Guid userId, string path, int pageNumber, int pageSize)
         {
             UserId = userId;
+            Path = path;
+            PageNumber = pageNumber;
+            PageSize = pageSize;
         }
+
     }
 }

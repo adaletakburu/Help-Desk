@@ -1,6 +1,7 @@
 ﻿using FluentValidation;
+using HelpDesk.Api.Application.Features.Commands.Demand.Create;
 
-namespace HelpDesk.Api.Application.Features.Commands.Demand.Create
+namespace HelpDesk.Api.Application.Validations.Demand
 {
     public class CreateDemandCommandValidator : AbstractValidator<CreateDemandCommand>
     {

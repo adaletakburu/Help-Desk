@@ -1,7 +1,7 @@
 ﻿using HelpDesk.Api.Application.Features.Commands.DemandMessage.Create;
 using HelpDesk.Api.Application.Features.Commands.DemandMessage.Delete;
 using HelpDesk.Api.Application.Features.Commands.DemandMessage.Update;
-using HelpDesk.Api.Application.Features.Queries.DemandMessage.GetById;
+using HelpDesk.Api.Application.Features.Queries.DemandMessage.GetByDemandId;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;

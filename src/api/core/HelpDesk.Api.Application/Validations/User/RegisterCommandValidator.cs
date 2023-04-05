@@ -1,6 +1,7 @@
 ﻿using FluentValidation;
+using HelpDesk.Api.Application.Features.Commands.User.Register;
 
-namespace HelpDesk.Api.Application.Features.Commands.User.Register
+namespace HelpDesk.Api.Application.Validations.User
 {
     public class RegisterCommandValidator : AbstractValidator<RegisterCommand>
     {

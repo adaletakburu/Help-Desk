@@ -14,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\common\HelpDesk.Common\HelpDesk.Common.csproj" />
     <ProjectReference Include="..\..\core\HelpDesk.Api.Application\HelpDesk.Api.Application.csproj" />
     <ProjectReference Include="..\..\infrastructure\HelpDesk.Infrastructure.Persistance\HelpDesk.Infrastructure.Persistance.csproj" />
   </ItemGroup>
