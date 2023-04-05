@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace HelpDesk.Api.Application.Features.Queries.DemandMessage.GetById
+namespace HelpDesk.Api.Application.Features.Queries.DemandMessage.GetByDemandId
 {
     public class GetByDemandIdDemandMessageQuery : IRequest<List<GetByDemandIdDemandMessageQueryResponse>>
     {

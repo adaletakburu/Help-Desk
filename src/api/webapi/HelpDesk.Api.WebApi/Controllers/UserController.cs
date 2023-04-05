@@ -3,10 +3,6 @@ using HelpDesk.Api.Application.Features.Commands.User.Login;
 using HelpDesk.Api.Application.Features.Commands.User.Register;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using RabbitMQ.Client;
-using RabbitMQ.Client.Events;
-using System.Text;
-using System.Text.Json;
 
 namespace HelpDesk.Api.WebApi.Controllers
 {

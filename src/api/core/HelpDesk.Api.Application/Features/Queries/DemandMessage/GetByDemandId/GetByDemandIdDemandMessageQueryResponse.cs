@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HelpDesk.Api.Application.Features.Queries.DemandMessage.GetById
+namespace HelpDesk.Api.Application.Features.Queries.DemandMessage.GetByDemandId
 {
     public class GetByDemandIdDemandMessageQueryResponse
     {

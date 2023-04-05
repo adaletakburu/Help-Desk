@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace HelpDesk.Api.Application.Features.Queries.DemandMessage.GetById
+namespace HelpDesk.Api.Application.Features.Queries.DemandMessage.GetByDemandId
 {
     public class GetByDemandIdDemandMessageQueryHandler : IRequestHandler<GetByDemandIdDemandMessageQuery, List<GetByDemandIdDemandMessageQueryResponse>>
     {

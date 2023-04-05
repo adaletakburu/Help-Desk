@@ -6,7 +6,7 @@ using HelpDesk.Api.Application.Features.Commands.DemandMessage.Update;
 using HelpDesk.Api.Application.Features.Commands.User.Login;
 using HelpDesk.Api.Application.Features.Commands.User.Register;
 using HelpDesk.Api.Application.Features.Queries.Demand.GetById;
-using HelpDesk.Api.Application.Features.Queries.DemandMessage.GetById;
+using HelpDesk.Api.Application.Features.Queries.DemandMessage.GetByDemandId;
 using HelpDesk.Api.Domain.Models;
 
 namespace HelpDesk.Api.Application.Mapper

@@ -1,6 +1,7 @@
 using HelpDesk.Api.Application.Extensions;
 using HelpDesk.Api.WebApi.Extensions;
 using HelpDesk.Api.WebApi.Middleware;
+using HelpDesk.Common.Extensions;
 using HelpDesk.Infrastructure.Persistance.Extensions;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json;
@@ -40,6 +41,8 @@ builder.Services.AddSwaggerGen(option =>
     });
 });
 builder.Services.AddHttpContextAccessor(); // httpcontextaccesor
+builder.Services.AddCommonRegistration(); //PAGÝNATÝON 
+
 builder.Services.AddScoped<ExceptionMiddleware>(); // miidleware scoped
 
 

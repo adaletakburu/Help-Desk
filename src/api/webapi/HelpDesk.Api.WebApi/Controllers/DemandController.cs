@@ -3,6 +3,7 @@ using HelpDesk.Api.Application.Features.Commands.Demand.Delete;
 using HelpDesk.Api.Application.Features.Commands.Demand.Update;
 using HelpDesk.Api.Application.Features.Queries.Demand.GetAll;
 using HelpDesk.Api.Application.Features.Queries.Demand.GetById;
+using HelpDesk.Common.Pagination.Filter;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -22,9 +23,9 @@ namespace HelpDesk.Api.WebApi.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAll([FromQuery] PaginationFilter filter)
         {
-            var result = await mediator.Send(new GetAllDemandQuery(UserId));
+            var result = await mediator.Send(new GetAllDemandQuery(UserId, Request.Path.Value, filter.PageNumber, filter.PageSize));
             return Ok(result);
         }
 
